@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="smartgame" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/libsmartgame" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="obj/Debug/" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/libsmartgame" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="obj/Release/" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-DNDEBUG" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add directory="../gtpengine" />
+		</Compiler>
+		<Unit filename="SgArray.h" />
+		<Unit filename="SgBWArray.h" />
+		<Unit filename="SgBWSet.h" />
+		<Unit filename="SgBlackWhite.h" />
+		<Unit filename="SgBoardColor.h" />
+		<Unit filename="SgBoardConst.cpp" />
+		<Unit filename="SgBoardConst.h" />
+		<Unit filename="SgCmdLineOpt.cpp" />
+		<Unit filename="SgCmdLineOpt.h" />
+		<Unit filename="SgConnCompIterator.cpp" />
+		<Unit filename="SgConnCompIterator.h" />
+		<Unit filename="SgDebug.cpp" />
+		<Unit filename="SgDebug.h" />
+		<Unit filename="SgEBWArray.h" />
+		<Unit filename="SgEvaluatedMoves.cpp" />
+		<Unit filename="SgEvaluatedMoves.h" />
+		<Unit filename="SgException.cpp" />
+		<Unit filename="SgException.h" />
+		<Unit filename="SgFastLog.cpp" />
+		<Unit filename="SgFastLog.h" />
+		<Unit filename="SgGameReader.cpp" />
+		<Unit filename="SgGameReader.h" />
+		<Unit filename="SgGameWriter.cpp" />
+		<Unit filename="SgGameWriter.h" />
+		<Unit filename="SgGtpClient.cpp" />
+		<Unit filename="SgGtpClient.h" />
+		<Unit filename="SgGtpCommands.cpp" />
+		<Unit filename="SgGtpCommands.h" />
+		<Unit filename="SgGtpUtil.cpp" />
+		<Unit filename="SgGtpUtil.h" />
+		<Unit filename="SgHash.h" />
+		<Unit filename="SgHashTable.h" />
+		<Unit filename="SgIncrementalStack.cpp" />
+		<Unit filename="SgIncrementalStack.h" />
+		<Unit filename="SgInit.cpp" />
+		<Unit filename="SgInit.h" />
+		<Unit filename="SgMarker.h" />
+		<Unit filename="SgMath.h" />
+		<Unit filename="SgMemCheck.cpp" />
+		<Unit filename="SgMemCheck.h" />
+		<Unit filename="SgMiaiMap.cpp" />
+		<Unit filename="SgMiaiMap.h" />
+		<Unit filename="SgMiaiStrategy.cpp" />
+		<Unit filename="SgMiaiStrategy.h" />
+		<Unit filename="SgMove.h" />
+		<Unit filename="SgMpiSynchronizer.cpp" />
+		<Unit filename="SgMpiSynchronizer.h" />
+		<Unit filename="SgNbIterator.cpp" />
+		<Unit filename="SgNbIterator.h" />
+		<Unit filename="SgNode.cpp" />
+		<Unit filename="SgNode.h" />
+		<Unit filename="SgNodeUtil.cpp" />
+		<Unit filename="SgNodeUtil.h" />
+		<Unit filename="SgPoint.cpp" />
+		<Unit filename="SgPoint.h" />
+		<Unit filename="SgPointArray.h" />
+		<Unit filename="SgPointIterator.h" />
+		<Unit filename="SgPointSet.cpp" />
+		<Unit filename="SgPointSet.h" />
+		<Unit filename="SgPointSetUtil.cpp" />
+		<Unit filename="SgPointSetUtil.h" />
+		<Unit filename="SgProbCut.cpp" />
+		<Unit filename="SgProbCut.h" />
+		<Unit filename="SgProcess.cpp" />
+		<Unit filename="SgProcess.h" />
+		<Unit filename="SgProp.cpp" />
+		<Unit filename="SgProp.h" />
+		<Unit filename="SgRandom.cpp" />
+		<Unit filename="SgRandom.h" />
+		<Unit filename="SgRect.cpp" />
+		<Unit filename="SgRect.h" />
+		<Unit filename="SgRestorer.h" />
+		<Unit filename="SgSList.h" />
+		<Unit filename="SgSearch.cpp" />
+		<Unit filename="SgSearch.h" />
+		<Unit filename="SgSearchControl.cpp" />
+		<Unit filename="SgSearchControl.h" />
+		<Unit filename="SgSearchStatistics.cpp" />
+		<Unit filename="SgSearchStatistics.h" />
+		<Unit filename="SgSearchTracer.cpp" />
+		<Unit filename="SgSearchTracer.h" />
+		<Unit filename="SgSearchValue.cpp" />
+		<Unit filename="SgSearchValue.h" />
+		<Unit filename="SgSortedArray.h" />
+		<Unit filename="SgSortedMoves.h" />
+		<Unit filename="SgStack.h" />
+		<Unit filename="SgStatistics.h" />
+		<Unit filename="SgStrategy.cpp" />
+		<Unit filename="SgStrategy.h" />
+		<Unit filename="SgStringUtil.cpp" />
+		<Unit filename="SgStringUtil.h" />
+		<Unit filename="SgSystem.cpp" />
+		<Unit filename="SgSystem.h" />
+		<Unit filename="SgTime.cpp" />
+		<Unit filename="SgTime.h" />
+		<Unit filename="SgTimeControl.cpp" />
+		<Unit filename="SgTimeControl.h" />
+		<Unit filename="SgTimeRecord.cpp" />
+		<Unit filename="SgTimeRecord.h" />
+		<Unit filename="SgTimer.h" />
+		<Unit filename="SgUctSearch.cpp" />
+		<Unit filename="SgUctSearch.h" />
+		<Unit filename="SgUctTree.cpp" />
+		<Unit filename="SgUctTree.h" />
+		<Unit filename="SgUctTreeUtil.cpp" />
+		<Unit filename="SgUctTreeUtil.h" />
+		<Unit filename="SgUtil.cpp" />
+		<Unit filename="SgUtil.h" />
+		<Unit filename="SgVector.h" />
+		<Unit filename="SgVectorUtility.cpp" />
+		<Unit filename="SgVectorUtility.h" />
+		<Unit filename="SgWrite.cpp" />
+		<Unit filename="SgWrite.h" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

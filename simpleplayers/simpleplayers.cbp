@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="simpleplayers" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/libsimpleplayers" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="obj/Debug/" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/libsimpleplayers" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="obj/Release/" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-DNDEBUG" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add directory="../go/" />
+			<Add directory="../gtpengine/" />
+			<Add directory="../smartgame/" />
+		</Compiler>
+		<Unit filename="SpAveragePlayer.cpp" />
+		<Unit filename="SpAveragePlayer.h" />
+		<Unit filename="SpCapturePlayer.cpp" />
+		<Unit filename="SpCapturePlayer.h" />
+		<Unit filename="SpDumbTacticalPlayer.cpp" />
+		<Unit filename="SpDumbTacticalPlayer.h" />
+		<Unit filename="SpGreedyPlayer.cpp" />
+		<Unit filename="SpGreedyPlayer.h" />
+		<Unit filename="SpInfluencePlayer.cpp" />
+		<Unit filename="SpInfluencePlayer.h" />
+		<Unit filename="SpLadderPlayer.cpp" />
+		<Unit filename="SpLadderPlayer.h" />
+		<Unit filename="SpLibertyPlayer.cpp" />
+		<Unit filename="SpLibertyPlayer.h" />
+		<Unit filename="SpMaxEyePlayer.cpp" />
+		<Unit filename="SpMaxEyePlayer.h" />
+		<Unit filename="SpMinLibPlayer.cpp" />
+		<Unit filename="SpMinLibPlayer.h" />
+		<Unit filename="SpMoveGenerator.cpp" />
+		<Unit filename="SpMoveGenerator.h" />
+		<Unit filename="SpRandomPlayer.cpp" />
+		<Unit filename="SpRandomPlayer.h" />
+		<Unit filename="SpSafePlayer.cpp" />
+		<Unit filename="SpSafePlayer.h" />
+		<Unit filename="SpSimplePlayer.cpp" />
+		<Unit filename="SpSimplePlayer.h" />
+		<Unit filename="SpUtil.cpp" />
+		<Unit filename="SpUtil.h" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

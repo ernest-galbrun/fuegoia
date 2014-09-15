@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<ActiveTarget name="Debug" />
+	<File name="SgGtpCommands.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="390" topLine="1" />
+	</File>
+	<File name="SgGtpCommands.h" open="0" top="0" tabpos="1">
+		<Cursor position="273" topLine="0" />
+	</File>
+	<File name="SgHash.h" open="0" top="0" tabpos="2">
+		<Cursor position="5128" topLine="210" />
+	</File>
+	<File name="SgInit.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="1461" topLine="38" />
+	</File>
+	<File name="SgInit.h" open="0" top="0" tabpos="0">
+		<Cursor position="1204" topLine="18" />
+	</File>
+	<File name="SgProcess.cpp" open="0" top="0" tabpos="7">
+		<Cursor position="0" topLine="0" />
+	</File>
+	<File name="SgProcess.h" open="0" top="0" tabpos="3">
+		<Cursor position="236" topLine="0" />
+	</File>
+	<File name="SgRandom.cpp" open="0" top="0" tabpos="4">
+		<Cursor position="1298" topLine="54" />
+	</File>
+	<File name="SgSystem.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="1239" topLine="29" />
+	</File>
+	<File name="SgSystem.h" open="0" top="0" tabpos="0">
+		<Cursor position="780" topLine="1" />
+	</File>
+	<File name="SgTime.cpp" open="0" top="0" tabpos="6">
+		<Cursor position="384" topLine="1" />
+	</File>
+</CodeBlocks_layout_file>

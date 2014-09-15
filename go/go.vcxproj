@@ -1,0 +1,216 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{C387BB1B-40D5-4B08-8017-BDFBFE880C68}</ProjectGuid>
+    <RootNamespace>go</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>$(SolutionDir)\smartgame;$(SolutionDir)\gtpengine;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>$(SolutionDir)\smartgame;$(SolutionDir)\gtpengine;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath>$(SolutionDir)\gtpengine;$(SolutionDir)\smartgame;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>$(SolutionDir)\gtpengine;$(SolutionDir)\smartgame;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="GoAssertBoardRestored.h" />
+    <ClInclude Include="GoBensonSolver.h" />
+    <ClInclude Include="GoBlock.h" />
+    <ClInclude Include="GoBoard.h" />
+    <ClInclude Include="GoBoardCheckPerformance.h" />
+    <ClInclude Include="GoBoardHistory.h" />
+    <ClInclude Include="GoBoardRestorer.h" />
+    <ClInclude Include="GoBoardSynchronizer.h" />
+    <ClInclude Include="GoBoardUpdater.h" />
+    <ClInclude Include="GoBoardUtil.h" />
+    <ClInclude Include="GoBook.h" />
+    <ClInclude Include="GoChain.h" />
+    <ClInclude Include="GoEyeCount.h" />
+    <ClInclude Include="GoEyeUtil.h" />
+    <ClInclude Include="GoGame.h" />
+    <ClInclude Include="GoGtpCommandUtil.h" />
+    <ClInclude Include="GoGtpEngine.h" />
+    <ClInclude Include="GoGtpExtraCommands.h" />
+    <ClInclude Include="GoGtpTimeSettings.h" />
+    <ClInclude Include="GoInfluence.h" />
+    <ClInclude Include="GoInit.h" />
+    <ClInclude Include="GoKomi.h" />
+    <ClInclude Include="GoLadder.h" />
+    <ClInclude Include="GoModBoard.h" />
+    <ClInclude Include="GoMotive.h" />
+    <ClInclude Include="GoMoveExecutor.h" />
+    <ClInclude Include="GoNodeUtil.h" />
+    <ClInclude Include="GoPlayer.h" />
+    <ClInclude Include="GoPlayerMove.h" />
+    <ClInclude Include="GoRegion.h" />
+    <ClInclude Include="GoRegionBoard.h" />
+    <ClInclude Include="GoRegionUtil.h" />
+    <ClInclude Include="GoRules.h" />
+    <ClInclude Include="GoSafetyCommands.h" />
+    <ClInclude Include="GoSafetySolver.h" />
+    <ClInclude Include="GoSafetyUtil.h" />
+    <ClInclude Include="GoSearch.h" />
+    <ClInclude Include="GoSetup.h" />
+    <ClInclude Include="GoSetupUtil.h" />
+    <ClInclude Include="GoSortedMoves.h" />
+    <ClInclude Include="GoStaticLadder.h" />
+    <ClInclude Include="GoStaticSafetySolver.h" />
+    <ClInclude Include="GoTimeControl.h" />
+    <ClInclude Include="GoUtil.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="GoBensonSolver.cpp" />
+    <ClCompile Include="GoBlock.cpp" />
+    <ClCompile Include="GoBoard.cpp" />
+    <ClCompile Include="GoBoardCheckPerformance.cpp" />
+    <ClCompile Include="GoBoardHistory.cpp" />
+    <ClCompile Include="GoBoardRestorer.cpp" />
+    <ClCompile Include="GoBoardSynchronizer.cpp" />
+    <ClCompile Include="GoBoardUpdater.cpp" />
+    <ClCompile Include="GoBoardUtil.cpp" />
+    <ClCompile Include="GoBook.cpp" />
+    <ClCompile Include="GoChain.cpp" />
+    <ClCompile Include="GoEyeCount.cpp" />
+    <ClCompile Include="GoEyeUtil.cpp" />
+    <ClCompile Include="GoGame.cpp" />
+    <ClCompile Include="GoGtpCommandUtil.cpp" />
+    <ClCompile Include="GoGtpEngine.cpp" />
+    <ClCompile Include="GoGtpExtraCommands.cpp" />
+    <ClCompile Include="GoGtpTimeSettings.cpp" />
+    <ClCompile Include="GoInfluence.cpp" />
+    <ClCompile Include="GoInit.cpp" />
+    <ClCompile Include="GoKomi.cpp" />
+    <ClCompile Include="GoLadder.cpp" />
+    <ClCompile Include="GoMotive.cpp" />
+    <ClCompile Include="GoNodeUtil.cpp" />
+    <ClCompile Include="GoPlayer.cpp" />
+    <ClCompile Include="GoPlayerMove.cpp" />
+    <ClCompile Include="GoRegion.cpp" />
+    <ClCompile Include="GoRegionBoard.cpp" />
+    <ClCompile Include="GoRegionUtil.cpp" />
+    <ClCompile Include="GoRules.cpp" />
+    <ClCompile Include="GoSafetyCommands.cpp" />
+    <ClCompile Include="GoSafetySolver.cpp" />
+    <ClCompile Include="GoSafetyUtil.cpp" />
+    <ClCompile Include="GoSearch.cpp" />
+    <ClCompile Include="GoSetupUtil.cpp" />
+    <ClCompile Include="GoStaticLadder.cpp" />
+    <ClCompile Include="GoStaticSafetySolver.cpp" />
+    <ClCompile Include="GoTimeControl.cpp" />
+    <ClCompile Include="GoUtil.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

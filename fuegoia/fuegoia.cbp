@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="fuegoia" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/fuegoia" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option external_deps="../geNN/bin/Debug/libgeNN.a;" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+				<Linker>
+					<Add directory="../go/bin/Debug/" />
+					<Add directory="../gtpengine/bin/Debug/" />
+					<Add directory="../smartgame/bin/Debug/" />
+					<Add directory="../simpleplayers/bin/Debug/" />
+					<Add directory="../geNNGoPlayer/bin/Debug/" />
+					<Add directory="../geNN/bin/Debug/" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/fuegoia" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option external_deps="../geNN/bin/Release/libgeNN.a;" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-DNDEBUG" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add directory="../go/bin/Release/" />
+					<Add directory="../gtpengine/bin/Release/" />
+					<Add directory="../smartgame/bin/Release/" />
+					<Add directory="../simpleplayers/bin/Release/" />
+					<Add directory="../geNN/bin/Release/" />
+					<Add directory="../geNNGoPlayer/bin/Release/" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add directory="../go/" />
+			<Add directory="../gtpengine/" />
+			<Add directory="../smartgame/" />
+			<Add directory="../simpleplayers/" />
+			<Add directory="../geNNGoPlayer/" />
+			<Add directory="../geNN/" />
+		</Compiler>
+		<Linker>
+			<Add library="boost_thread" />
+			<Add library="boost_system" />
+			<Add library="boost_filesystem" />
+			<Add library="geNNGoPlayer" />
+			<Add library="simpleplayers" />
+			<Add library="geNN" />
+			<Add library="go" />
+			<Add library="gtpengine" />
+			<Add library="smartgame" />
+			<Add directory="$(#boost.lib)" />
+		</Linker>
+		<Unit filename="geNNFuegoEcosystem.cpp" />
+		<Unit filename="geNNFuegoEcosystem.h" />
+		<Unit filename="test.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

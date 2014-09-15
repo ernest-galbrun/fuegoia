@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="geNN" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/libgeNN" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="obj/Debug/" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/libgeNN" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="obj/Release/" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-DNDEBUG" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Unit filename="geNN.h" />
+		<Unit filename="geNNBrain.cpp" />
+		<Unit filename="geNNBrain.h" />
+		<Unit filename="geNNEcosystem.cpp" />
+		<Unit filename="geNNEcosystem.h" />
+		<Unit filename="geNNGene.cpp" />
+		<Unit filename="geNNGene.h" />
+		<Unit filename="geNNNeuron.cpp" />
+		<Unit filename="geNNNeuron.h" />
+		<Unit filename="geNNNode.cpp" />
+		<Unit filename="geNNNode.h" />
+		<Unit filename="geNNUtil.cpp" />
+		<Unit filename="geNNudpserver.cpp" />
+		<Unit filename="geNNudpserver.h" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

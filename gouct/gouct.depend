@@ -1,0 +1,203 @@
+# depslib dependency file v1.0
+1277901681 source:/home/ernest/goia/fuegoia/gouct/GoUctBoard.cpp
+	"SgSystem.h"
+	"GoUctBoard.h"
+	<boost/static_assert.hpp>
+	<algorithm>
+	"GoBoardUtil.h"
+	"SgNbIterator.h"
+	"SgStack.h"
+
+1277901665 /home/ernest/goia/fuegoia/smartgame//SgSystem.h
+	<config.h>
+	<sys/types.h>
+
+1277901681 /home/ernest/goia/fuegoia/gouct/GoUctBoard.h
+	<bitset>
+	<cstring>
+	<stdint.h>
+	<boost/static_assert.hpp>
+	"GoBoard.h"
+	"GoBoardUtil.h"
+	"GoPlayerMove.h"
+	"SgArray.h"
+	"SgBoardConst.h"
+	"SgBoardColor.h"
+	"SgMarker.h"
+	"SgBWArray.h"
+	"SgNbIterator.h"
+	"SgPoint.h"
+	"SgPointArray.h"
+	"SgPointIterator.h"
+	"SgSList.h"
+
+1277901676 /home/ernest/goia/fuegoia/go//GoBoard.h
+	<bitset>
+	<cstring>
+	<stdint.h>
+	<boost/static_assert.hpp>
+	"GoPlayerMove.h"
+	"GoRules.h"
+	"GoSetup.h"
+	"SgArray.h"
+	"SgBoardConst.h"
+	"SgBoardColor.h"
+	"SgMarker.h"
+	"SgBWArray.h"
+	"SgBWSet.h"
+	"SgHash.h"
+	"SgNbIterator.h"
+	"SgPoint.h"
+	"SgPointArray.h"
+	"SgPointIterator.h"
+	"SgPointSet.h"
+	"SgSList.h"
+
+1277901676 /home/ernest/goia/fuegoia/go//GoPlayerMove.h
+	<iosfwd>
+	"SgBlackWhite.h"
+	"SgPoint.h"
+
+1277901665 /home/ernest/goia/fuegoia/smartgame//SgBlackWhite.h
+	<boost/static_assert.hpp>
+	"SgSystem.h"
+
+1277901665 /home/ernest/goia/fuegoia/smartgame//SgPoint.h
+	<climits>
+	<cstdlib>
+	<iosfwd>
+	<string>
+	"SgArray.h"
+	"SgMove.h"
+	"SgUtil.h"
+
+1277901665 /home/ernest/goia/fuegoia/smartgame//SgArray.h
+	<cstring>
+
+1277901665 /home/ernest/goia/fuegoia/smartgame//SgMove.h
+
+1277901665 /home/ernest/goia/fuegoia/smartgame//SgUtil.h
+	<iostream>
+	"SgBlackWhite.h"
+	"SgBWArray.h"
+
+1277901665 /home/ernest/goia/fuegoia/smartgame//SgBWArray.h
+	<boost/static_assert.hpp>
+	"SgBlackWhite.h"
+
+1277901676 /home/ernest/goia/fuegoia/go//GoRules.h
+	<iosfwd>
+	<string>
+	"GoKomi.h"
+
+1277901676 /home/ernest/goia/fuegoia/go//GoKomi.h
+	<string>
+	"SgException.h"
+
+1277901665 /home/ernest/goia/fuegoia/smartgame//SgException.h
+	<exception>
+	<string>
+
+1277901676 /home/ernest/goia/fuegoia/go//GoSetup.h
+	"SgBlackWhite.h"
+	"SgBWSet.h"
+	"SgPoint.h"
+
+1277901665 /home/ernest/goia/fuegoia/smartgame//SgBWSet.h
+	"SgPointSet.h"
+	"SgBWArray.h"
+	"SgPointSetUtil.h"
+
+1277901665 /home/ernest/goia/fuegoia/smartgame//SgPointSet.h
+	<algorithm>
+	<bitset>
+	<cstring>
+	<iosfwd>
+	<memory>
+	"SgArray.h"
+	"SgPoint.h"
+	"SgRect.h"
+	"SgVector.h"
+
+1277901665 /home/ernest/goia/fuegoia/smartgame//SgRect.h
+	"SgPoint.h"
+
+1277901665 /home/ernest/goia/fuegoia/smartgame//SgVector.h
+	<functional>
+	<algorithm>
+	<vector>
+	<iterator>
+
+1277901665 /home/ernest/goia/fuegoia/smartgame//SgPointSetUtil.h
+	<iosfwd>
+	<string>
+	"SgPointSet.h"
+
+1277901665 /home/ernest/goia/fuegoia/smartgame//SgBoardConst.h
+	<boost/shared_ptr.hpp>
+	"SgArray.h"
+	"SgNbIterator.h"
+	"SgPoint.h"
+	"SgPointArray.h"
+	"SgPointIterator.h"
+	"SgPointSet.h"
+
+1277901665 /home/ernest/goia/fuegoia/smartgame//SgNbIterator.h
+	<algorithm>
+	"SgPoint.h"
+
+1277901665 /home/ernest/goia/fuegoia/smartgame//SgPointArray.h
+	<iomanip>
+	<iostream>
+	<sstream>
+	"SgArray.h"
+	"SgPoint.h"
+
+1277901665 /home/ernest/goia/fuegoia/smartgame//SgPointIterator.h
+	"SgPoint.h"
+
+1277901665 /home/ernest/goia/fuegoia/smartgame//SgBoardColor.h
+	<climits>
+	"SgBlackWhite.h"
+	<boost/static_assert.hpp>
+
+1277901665 /home/ernest/goia/fuegoia/smartgame//SgMarker.h
+	"SgArray.h"
+	"SgPoint.h"
+	"SgPointSet.h"
+
+1277964807 /home/ernest/goia/fuegoia/smartgame//SgHash.h
+	<algorithm>
+	<bitset>
+	<iomanip>
+	<iostream>
+	<sstream>
+	"SgArray.h"
+	"SgException.h"
+	"SgRandom.h"
+
+1277901665 /home/ernest/goia/fuegoia/smartgame//SgRandom.h
+	<algorithm>
+	<list>
+	<boost/random/mersenne_twister.hpp>
+	"SgArray.h"
+
+1277901665 /home/ernest/goia/fuegoia/smartgame//SgSList.h
+	<algorithm>
+
+1277901676 /home/ernest/goia/fuegoia/go//GoBoardUtil.h
+	"GoBoard.h"
+	"SgBoardColor.h"
+	"SgDebug.h"
+	"SgPoint.h"
+	"SgPointArray.h"
+	"SgStack.h"
+	"SgVector.h"
+
+1277901665 /home/ernest/goia/fuegoia/smartgame//SgDebug.h
+	<iosfwd>
+	<sstream>
+
+1277901665 /home/ernest/goia/fuegoia/smartgame//SgStack.h
+	<algorithm>
+

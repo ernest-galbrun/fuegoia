@@ -1,0 +1,246 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{66F0A8DD-163F-4A1D-8DD4-991CEF32FD03}</ProjectGuid>
+    <RootNamespace>smartgame</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>$(SolutionDir)\gtpengine;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>$(SolutionDir)\gtpengine;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath>$(SolutionDir)\gtpengine;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>$(SolutionDir)\gtpengine;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="SgArray.h" />
+    <ClInclude Include="SgBlackWhite.h" />
+    <ClInclude Include="SgBoardColor.h" />
+    <ClInclude Include="SgBoardConst.h" />
+    <ClInclude Include="SgBWArray.h" />
+    <ClInclude Include="SgBWSet.h" />
+    <ClInclude Include="SgCmdLineOpt.h" />
+    <ClInclude Include="SgConnCompIterator.h" />
+    <ClInclude Include="SgDebug.h" />
+    <ClInclude Include="SgEBWArray.h" />
+    <ClInclude Include="SgEvaluatedMoves.h" />
+    <ClInclude Include="SgException.h" />
+    <ClInclude Include="SgFastLog.h" />
+    <ClInclude Include="SgGameReader.h" />
+    <ClInclude Include="SgGameWriter.h" />
+    <ClInclude Include="SgGtpClient.h" />
+    <ClInclude Include="SgGtpCommands.h" />
+    <ClInclude Include="SgGtpUtil.h" />
+    <ClInclude Include="SgHash.h" />
+    <ClInclude Include="SgHashTable.h" />
+    <ClInclude Include="SgIncrementalStack.h" />
+    <ClInclude Include="SgInit.h" />
+    <ClInclude Include="SgMarker.h" />
+    <ClInclude Include="SgMath.h" />
+    <ClInclude Include="SgMemCheck.h" />
+    <ClInclude Include="SgMiaiMap.h" />
+    <ClInclude Include="SgMiaiStrategy.h" />
+    <ClInclude Include="SgMove.h" />
+    <ClInclude Include="SgMpiSynchronizer.h" />
+    <ClInclude Include="SgNbIterator.h" />
+    <ClInclude Include="SgNode.h" />
+    <ClInclude Include="SgNodeUtil.h" />
+    <ClInclude Include="SgPoint.h" />
+    <ClInclude Include="SgPointArray.h" />
+    <ClInclude Include="SgPointIterator.h" />
+    <ClInclude Include="SgPointSet.h" />
+    <ClInclude Include="SgPointSetUtil.h" />
+    <ClInclude Include="SgProbCut.h" />
+    <ClInclude Include="SgProp.h" />
+    <ClInclude Include="SgRandom.h" />
+    <ClInclude Include="SgRect.h" />
+    <ClInclude Include="SgRestorer.h" />
+    <ClInclude Include="SgSearch.h" />
+    <ClInclude Include="SgSearchControl.h" />
+    <ClInclude Include="SgSearchStatistics.h" />
+    <ClInclude Include="SgSearchTracer.h" />
+    <ClInclude Include="SgSearchValue.h" />
+    <ClInclude Include="SgSList.h" />
+    <ClInclude Include="SgSortedArray.h" />
+    <ClInclude Include="SgSortedMoves.h" />
+    <ClInclude Include="SgStack.h" />
+    <ClInclude Include="SgStatistics.h" />
+    <ClInclude Include="SgStrategy.h" />
+    <ClInclude Include="SgStringUtil.h" />
+    <ClInclude Include="SgSystem.h" />
+    <ClInclude Include="SgTime.h" />
+    <ClInclude Include="SgTimeControl.h" />
+    <ClInclude Include="SgTimer.h" />
+    <ClInclude Include="SgTimeRecord.h" />
+    <ClInclude Include="SgUctSearch.h" />
+    <ClInclude Include="SgUctTree.h" />
+    <ClInclude Include="SgUctTreeUtil.h" />
+    <ClInclude Include="SgUtil.h" />
+    <ClInclude Include="SgVector.h" />
+    <ClInclude Include="SgVectorUtility.h" />
+    <ClInclude Include="SgWrite.h" />
+    <ClInclude Include="WinFuego04_linux2win.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="SgBoardConst.cpp" />
+    <ClCompile Include="SgCmdLineOpt.cpp" />
+    <ClCompile Include="SgConnCompIterator.cpp" />
+    <ClCompile Include="SgDebug.cpp" />
+    <ClCompile Include="SgEvaluatedMoves.cpp" />
+    <ClCompile Include="SgException.cpp" />
+    <ClCompile Include="SgFastLog.cpp" />
+    <ClCompile Include="SgGameReader.cpp" />
+    <ClCompile Include="SgGameWriter.cpp" />
+    <ClCompile Include="SgGtpClient.cpp" />
+    <ClCompile Include="SgGtpCommands.cpp" />
+    <ClCompile Include="SgGtpUtil.cpp" />
+    <ClCompile Include="SgIncrementalStack.cpp" />
+    <ClCompile Include="SgInit.cpp" />
+    <ClCompile Include="SgMemCheck.cpp" />
+    <ClCompile Include="SgMiaiMap.cpp" />
+    <ClCompile Include="SgMiaiStrategy.cpp" />
+    <ClCompile Include="SgMpiSynchronizer.cpp" />
+    <ClCompile Include="SgNbIterator.cpp" />
+    <ClCompile Include="SgNode.cpp" />
+    <ClCompile Include="SgNodeUtil.cpp" />
+    <ClCompile Include="SgPoint.cpp" />
+    <ClCompile Include="SgPointSet.cpp" />
+    <ClCompile Include="SgPointSetUtil.cpp" />
+    <ClCompile Include="SgProbCut.cpp" />
+    <ClCompile Include="SgProp.cpp" />
+    <ClCompile Include="SgRandom.cpp" />
+    <ClCompile Include="SgRect.cpp" />
+    <ClCompile Include="SgSearch.cpp" />
+    <ClCompile Include="SgSearchControl.cpp" />
+    <ClCompile Include="SgSearchStatistics.cpp" />
+    <ClCompile Include="SgSearchTracer.cpp" />
+    <ClCompile Include="SgSearchValue.cpp" />
+    <ClCompile Include="SgStrategy.cpp" />
+    <ClCompile Include="SgStringUtil.cpp" />
+    <ClCompile Include="SgSystem.cpp" />
+    <ClCompile Include="SgTime.cpp" />
+    <ClCompile Include="SgTimeControl.cpp" />
+    <ClCompile Include="SgTimeRecord.cpp" />
+    <ClCompile Include="SgUctSearch.cpp" />
+    <ClCompile Include="SgUctTree.cpp" />
+    <ClCompile Include="SgUctTreeUtil.cpp" />
+    <ClCompile Include="SgUtil.cpp" />
+    <ClCompile Include="SgVectorUtility.cpp" />
+    <ClCompile Include="SgWrite.cpp" />
+    <ClCompile Include="WinFuego04_linux2win.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

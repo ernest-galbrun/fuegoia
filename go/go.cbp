@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="go" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/libgo" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="obj/Debug/" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/libgo" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="obj/Release/" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-DNDEBUG" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add directory="../smartgame/" />
+			<Add directory="../gtpengine/" />
+		</Compiler>
+		<Unit filename="GoAssertBoardRestored.h" />
+		<Unit filename="GoBensonSolver.cpp" />
+		<Unit filename="GoBensonSolver.h" />
+		<Unit filename="GoBlock.cpp" />
+		<Unit filename="GoBlock.h" />
+		<Unit filename="GoBoard.cpp" />
+		<Unit filename="GoBoard.h" />
+		<Unit filename="GoBoardCheckPerformance.cpp" />
+		<Unit filename="GoBoardCheckPerformance.h" />
+		<Unit filename="GoBoardHistory.cpp" />
+		<Unit filename="GoBoardHistory.h" />
+		<Unit filename="GoBoardRestorer.cpp" />
+		<Unit filename="GoBoardRestorer.h" />
+		<Unit filename="GoBoardSynchronizer.cpp" />
+		<Unit filename="GoBoardSynchronizer.h" />
+		<Unit filename="GoBoardUpdater.cpp" />
+		<Unit filename="GoBoardUpdater.h" />
+		<Unit filename="GoBoardUtil.cpp" />
+		<Unit filename="GoBoardUtil.h" />
+		<Unit filename="GoBook.cpp" />
+		<Unit filename="GoBook.h" />
+		<Unit filename="GoChain.cpp" />
+		<Unit filename="GoChain.h" />
+		<Unit filename="GoEyeCount.cpp" />
+		<Unit filename="GoEyeCount.h" />
+		<Unit filename="GoEyeUtil.cpp" />
+		<Unit filename="GoEyeUtil.h" />
+		<Unit filename="GoGame.cpp" />
+		<Unit filename="GoGame.h" />
+		<Unit filename="GoGtpCommandUtil.cpp" />
+		<Unit filename="GoGtpCommandUtil.h" />
+		<Unit filename="GoGtpEngine.cpp" />
+		<Unit filename="GoGtpEngine.h" />
+		<Unit filename="GoGtpExtraCommands.cpp" />
+		<Unit filename="GoGtpExtraCommands.h" />
+		<Unit filename="GoGtpTimeSettings.cpp" />
+		<Unit filename="GoGtpTimeSettings.h" />
+		<Unit filename="GoInfluence.cpp" />
+		<Unit filename="GoInfluence.h" />
+		<Unit filename="GoInit.cpp" />
+		<Unit filename="GoInit.h" />
+		<Unit filename="GoKomi.cpp" />
+		<Unit filename="GoKomi.h" />
+		<Unit filename="GoLadder.cpp" />
+		<Unit filename="GoLadder.h" />
+		<Unit filename="GoModBoard.h" />
+		<Unit filename="GoMotive.cpp" />
+		<Unit filename="GoMotive.h" />
+		<Unit filename="GoMoveExecutor.h" />
+		<Unit filename="GoNodeUtil.cpp" />
+		<Unit filename="GoNodeUtil.h" />
+		<Unit filename="GoPlayer.cpp" />
+		<Unit filename="GoPlayer.h" />
+		<Unit filename="GoPlayerMove.cpp" />
+		<Unit filename="GoPlayerMove.h" />
+		<Unit filename="GoRegion.cpp" />
+		<Unit filename="GoRegion.h" />
+		<Unit filename="GoRegionBoard.cpp" />
+		<Unit filename="GoRegionBoard.h" />
+		<Unit filename="GoRegionUtil.cpp" />
+		<Unit filename="GoRegionUtil.h" />
+		<Unit filename="GoRules.cpp" />
+		<Unit filename="GoRules.h" />
+		<Unit filename="GoSafetyCommands.cpp" />
+		<Unit filename="GoSafetyCommands.h" />
+		<Unit filename="GoSafetySolver.cpp" />
+		<Unit filename="GoSafetySolver.h" />
+		<Unit filename="GoSafetyUtil.cpp" />
+		<Unit filename="GoSafetyUtil.h" />
+		<Unit filename="GoSearch.cpp" />
+		<Unit filename="GoSearch.h" />
+		<Unit filename="GoSetup.h" />
+		<Unit filename="GoSetupUtil.cpp" />
+		<Unit filename="GoSetupUtil.h" />
+		<Unit filename="GoSortedMoves.h" />
+		<Unit filename="GoStaticLadder.cpp" />
+		<Unit filename="GoStaticLadder.h" />
+		<Unit filename="GoStaticSafetySolver.cpp" />
+		<Unit filename="GoStaticSafetySolver.h" />
+		<Unit filename="GoTimeControl.cpp" />
+		<Unit filename="GoTimeControl.h" />
+		<Unit filename="GoUtil.cpp" />
+		<Unit filename="GoUtil.h" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
