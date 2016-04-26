@@ -3,7 +3,7 @@
     See SgTimeControl.h
 */
 //----------------------------------------------------------------------------
-
+#include <algorithm>
 #include "SgSystem.h"
 #include "SgTimeControl.h"
 

@@ -177,7 +177,7 @@ int		Ecosystem::SendToFTP(boost::filesystem::path fileHere, string fileThere, bo
         filesystem::path paramftp(folder/"cmdftp.txt");
         filesystem::ofstream ftp (paramftp); 
 		#ifdef _WIN32
-        ftp << "open\n" << "hephaestos.fr\n" << "u52181846-go\n" << "Pmdlpen1\n";
+        ftp << "open\n" << "hephaestos.fr\n" << "ftp52181846-0\n" << "Pmdlpen1\n";
 		if (binary)
 			ftp << "binary\n";
         ftp << "put\n";
@@ -185,7 +185,7 @@ int		Ecosystem::SendToFTP(boost::filesystem::path fileHere, string fileThere, bo
         ftp << fileThere << '\n';
         ftp << "bye";
         #else
-        ftp << "open hephaestos.fr -u u52181846-go,Pmdlpen1\n";
+        ftp << "open hephaestos.fr -u ftp52181846-0,Pmdlpen1\n";
         ftp << "put " <<fileHere.file_string() << binary?" ":" -a "<<"-o " << fileThere <<'\n';
         ftp << "quit";
         #endif  
@@ -205,7 +205,7 @@ int		Ecosystem::ReceiveFromFTP(string fileThere, boost::filesystem::path fileHer
         filesystem::path paramftp(folder/"cmdftp.txt");
         filesystem::ofstream ftp (paramftp); 
 		#ifdef _WIN32
-        ftp << "open\n" << "hephaestos.fr\n" << "u52181846-go\n" << "Pmdlpen1\n";
+        ftp << "open\n" << "hephaestos.fr\n" << "ftp52181846-0\n" << "Pmdlpen1\n";
 		if (binary)
 			ftp << "binary\n";
         ftp << "get\n";
@@ -213,7 +213,7 @@ int		Ecosystem::ReceiveFromFTP(string fileThere, boost::filesystem::path fileHer
         ftp << fileHere.generic_string() <<'\n';
         ftp << "bye";
         #else
-        ftp << "open hephaestos.fr -u u52181846-go,Pmdlpen1\n";
+        ftp << "open hephaestos.fr -u ftp52181846-0,Pmdlpen1\n";
         ftp << "get " << fileThere << binary?" ":" -a "<<"-o "  << fileHere.file_string() << '\n';
         ftp << "quit";
         #endif        
